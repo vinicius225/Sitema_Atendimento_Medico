@@ -1,13 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-
-namespace Data.Entities
+﻿namespace API.DTOs
 {
-    [Table("medico")]
-    public class Medico : IEntityBase
+    public class MedicoDTO
     {
         public string nome { get; set; }
         public string crm { get; set; }
         public string estado_crm { get; set; }
-
     }
 }

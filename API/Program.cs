@@ -1,3 +1,5 @@
+using API.DTOs.AutoMapping;
+using AutoMapper;
 using Infra.Dependeces;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -8,6 +10,17 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.ConfigurationDatabaseProject();
 //Dependecias repositories
 builder.Services.RepositoriesDependeces();
+
+
+var mappingConfig = new MapperConfiguration(mc =>
+{
+    mc.AddProfile(new MappingProfile());
+});
+
+IMapper mapper = mappingConfig.CreateMapper();
+builder.Services.AddSingleton(mapper);
+
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle

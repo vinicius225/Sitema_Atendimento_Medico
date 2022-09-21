@@ -13,16 +13,22 @@ namespace Infra.Dependeces
     public static class ServicesDependeces
     {
 
-        public static void ConfigurationDatabaseProject(this IServiceCollection services)
+        public static IServiceCollection ConfigurationDatabaseProject(this IServiceCollection services)
         {
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
+            var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
 
-            services.AddDbContext<AppDbContext>(opt => opt.UseMySql("server=localhost;user=root;password=1234;database=ef", serverVersion));
+            services.AddDbContext<AppDbContext>(options => options.UseMySql("server=localhost;user=root;password=123456;database=upa", serverVersion));
 
+            return services;
         }
-        public static void RepositoriesDependeces(this IServiceCollection services)
+        public static IServiceCollection RepositoriesDependeces(this IServiceCollection services)
         {
             services.AddScoped<IMedicoRepository, MedicoRepository>();
+
+            return services;
+
         }
+
+
     }
 }
