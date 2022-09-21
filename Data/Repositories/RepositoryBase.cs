@@ -1,0 +1,37 @@
+﻿using Data.Repositories.Interfaces;
+
+namespace Data.Repositories
+{
+    public class RepositoryBase<T> : IRepositoryBase<T> where T : class
+    {
+
+        protected AppDbContext _appDbContext = new AppDbContext();
+        public void Add(T entity)
+        {
+            _appDbContext.Add(entity);
+            _appDbContext.SaveChanges();
+        }
+
+        public void Delete(T entity)
+        {
+            _appDbContext.Remove(entity);
+            _appDbContext.SaveChanges();
+        }
+
+        public T Get(int id)
+        {
+            return _appDbContext.Set<T>().Find(id);
+        }
+
+        public IEnumerable<T> GetAll()
+        {
+            return _appDbContext.Set<T>();
+        }
+
+        public void Update(T entity)
+        {
+            _appDbContext.Entry(entity).State = Microsoft.EntityFrameworkCore.EntityState.Modified;
+            _appDbContext.SaveChanges();
+        }
+    }
+}

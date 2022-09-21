@@ -1,0 +1,10 @@
+﻿namespace Data.Entities
+{
+    public class Medico : IEntityBase
+    {
+        public string nome { get; set; }
+        public string crm { get; set; }
+        public string estado_crm { get; set; }
+
+    }
+}
