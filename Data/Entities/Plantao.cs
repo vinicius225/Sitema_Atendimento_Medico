@@ -1,5 +1,5 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
-
+using static Infra.Helpers.EnumerablesTips;
 
 namespace Data.Entities
 {

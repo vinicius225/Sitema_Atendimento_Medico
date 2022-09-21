@@ -5,7 +5,7 @@ namespace Data.Repositories
     public class RepositoryBase<T> : IRepositoryBase<T> where T : class
     {
 
-        protected AppDbContext _appDbContext = new AppDbContext();
+        readonly AppDbContext _appDbContext = new AppDbContext();
         public void Add(T entity)
         {
             _appDbContext.Add(entity);
