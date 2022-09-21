@@ -8,16 +8,17 @@ using Microsoft.EntityFrameworkCore;
 using Data.Repositories.Interfaces;
 using Data.Repositories;
 
-namespace Infra
+namespace Infra.Dependeces
 {
     public static class ServicesDependeces
     {
 
-        public static void ConfigurationDatabase(this IServiceCollection services)
+        public static void ConfigurationDatabaseProject(this IServiceCollection services)
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 29));
 
             services.AddDbContext<AppDbContext>(opt => opt.UseMySql("server=localhost;user=root;password=1234;database=ef", serverVersion));
+
         }
         public static void RepositoriesDependeces(this IServiceCollection services)
         {

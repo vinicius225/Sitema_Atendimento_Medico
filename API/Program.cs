@@ -1,6 +1,13 @@
+using Infra.Dependeces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
+
+//Configuracao de banco de dados
+builder.Services.ConfigurationDatabaseProject();
+//Dependecias repositories
+builder.Services.RepositoriesDependeces();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -8,6 +15,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
+
+
 
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
