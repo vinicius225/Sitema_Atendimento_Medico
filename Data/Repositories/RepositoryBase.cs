@@ -6,6 +6,12 @@ namespace Data.Repositories
     {
 
         readonly AppDbContext _appDbContext ;
+
+        public RepositoryBase(AppDbContext appDbContext)
+        {
+            _appDbContext = appDbContext;
+        }
+
         public void Add(T entity)
         {
             _appDbContext.Add(entity);
