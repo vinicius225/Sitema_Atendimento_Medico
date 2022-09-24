@@ -1,4 +1,5 @@
 ﻿using Data.Repositories.Interfaces;
+using System.Data.Entity.Core;
 
 namespace Data.Repositories
 {
@@ -31,7 +32,8 @@ namespace Data.Repositories
 
         public IEnumerable<T> GetAll()
         {
-            return _appDbContext.Set<T>();
+
+                return _appDbContext.Set<T>();
         }
 
         public void Update(T entity)

@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+using Data.Entities;
 
 namespace API.DTOs.AutoMapping
 {
@@ -6,7 +7,7 @@ namespace API.DTOs.AutoMapping
     {
         public MappingProfile()
         {
-                CreateMap<MedicoDTO,MedicoDTO>().ReverseMap();
+                CreateMap<MedicoDTO,Medico>().ReverseMap();
         }
     }
 }
