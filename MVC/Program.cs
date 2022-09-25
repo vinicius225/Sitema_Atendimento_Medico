@@ -1,11 +1,15 @@
 using AutoMapper;
+using Infra.Dependeces;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-
+//Configuracao de banco de dados
+builder.Services.ConfigurationDatabaseProject();
+//Dependecias repositories
+builder.Services.RepositoriesDependeces();
 
 
 var app = builder.Build();

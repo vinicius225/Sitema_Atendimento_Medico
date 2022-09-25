@@ -1,5 +1,9 @@
-﻿namespace Data.Entities
+﻿using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Data.Entities
 {
+    [Table("unidade_saude")]
+
     public class UnidadeSaude : IEntityBase
     {
         public string nome { get; set; }

@@ -25,15 +25,15 @@ namespace Data.Repositories
             _appDbContext.SaveChanges();
         }
 
-        public T Get(int id)
+        public  async Task<T> Get(int id)
         {
-            return _appDbContext.Set<T>().Find(id);
+            return await _appDbContext.Set<T>().FindAsync(id);
         }
 
-        public IEnumerable<T> GetAll()
+        public   async Task<IEnumerable<T>> GetAll()
         {
 
-                return _appDbContext.Set<T>();
+                return  _appDbContext.Set<T>();
         }
 
         public void Update(T entity)

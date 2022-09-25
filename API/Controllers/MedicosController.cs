@@ -5,6 +5,7 @@ using Data;
 using Data.Entities;
 using Data.Repositories.Interfaces;
 using Microsoft.AspNetCore.Mvc;
+using MySqlConnector;
 
 // For more information on enabling Web API for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 
@@ -28,12 +29,15 @@ namespace API.Controllers
         public async Task<ActionResult<List<MedicoDTO>>> Get()
         {
 
+            var medicosBD = await _medicoRepository.GetAll();
 
-            var medicosBD =  _medicoRepository.GetAll().ToList();
+            medicosBD = medicosBD.ToList();
 
             var medicosDTO = _mapping.Map<List<MedicoDTO>>(medicosBD);
 
+
             return Ok(medicosDTO);
+
         }
 
         // GET api/<MedicosController>/5
@@ -76,9 +80,9 @@ namespace API.Controllers
         public ActionResult<MedicoDTO> Put(int id, [FromBody] MedicoDTO medico)
         {
             var medicoBd = _medicoRepository.Get(id);
-            if(medico != null)
+            if (medico != null)
             {
-               var medicoUpdate = _mapping.Map<Medico>(medico);
+                var medicoUpdate = _mapping.Map<Medico>(medico);
                 medicoUpdate.id = id;
                 _medicoRepository.Update(medicoUpdate);
 

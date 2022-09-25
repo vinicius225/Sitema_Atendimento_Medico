@@ -5,8 +5,8 @@
          void  Add(T entity); 
         void Update(T entity);
         void Delete(T entity);
-        T Get(int id);
-        IEnumerable<T> GetAll();
+        Task<T> Get(int id);
+        Task<IEnumerable<T>> GetAll();
 
     }
 }

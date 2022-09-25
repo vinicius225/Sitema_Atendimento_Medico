@@ -3,6 +3,7 @@ using static Infra.Helpers.EnumerablesTips;
 
 namespace Data.Entities
 {
+    [Table("plantao")]
     public class Plantao : IEntityBase
     {
         public int id_unidade { get; set; }
@@ -15,8 +16,8 @@ namespace Data.Entities
         [ForeignKey("id_unidade")]
         public ICollection<UnidadeSaude> UnidadeSaudes { get; set; }
 
-        [ForeignKey("id_medico")]
-        public ICollection<Medico> Medicos { get; set; }
+        //[ForeignKey("id_medico")]
+        //public ICollection<Medico> Medicos { get; set; }
 
         [ForeignKey("id_especialidade")]
         public ICollection<Especialidade> Especialidades { get; set; }
