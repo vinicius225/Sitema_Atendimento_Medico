@@ -82,12 +82,12 @@ namespace API.Controllers
             var medicoBd = _medicoRepository.Get(id);
             if (medico != null)
             {
-                var medicoUpdate = _mapping.Map<Medico>(medico);
-                medicoUpdate.id = id;
-                medicoBd.nome = "Teste 2000";
-                _medicoRepository.Update(medicoUpdate);
+                medicoBd.nome = medico.nome;
+                medicoBd.estado_crm = medico.estado_crm;
 
-                return Ok(_mapping.Map<MedicoDTO>(medicoUpdate));
+                _medicoRepository.Update(medicoBd);
+
+                return Ok(medico);
             }
             else
             {
