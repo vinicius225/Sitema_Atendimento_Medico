@@ -29,7 +29,7 @@ namespace API.Controllers
         public async Task<ActionResult<List<MedicoDTO>>> Get()
         {
 
-            var medicosBD = await _medicoRepository.GetAll();
+            var medicosBD =  _medicoRepository.GetAll();
 
             medicosBD = medicosBD.ToList();
 
@@ -84,6 +84,7 @@ namespace API.Controllers
             {
                 var medicoUpdate = _mapping.Map<Medico>(medico);
                 medicoUpdate.id = id;
+                medicoBd.nome = "Teste 2000";
                 _medicoRepository.Update(medicoUpdate);
 
                 return Ok(_mapping.Map<MedicoDTO>(medicoUpdate));
