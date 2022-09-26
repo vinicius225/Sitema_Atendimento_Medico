@@ -9,9 +9,5 @@ namespace Data.Entities
         public string crm { get; set; }
         public string estado_crm { get; set; }
 
-
-        public ICollection<UnidadeSaude> UnidadeSaudes { get; set; } 
-        public ICollection<Especialidade> Especialidades { get; set; }
-
     }
 }

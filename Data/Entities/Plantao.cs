@@ -13,8 +13,13 @@ namespace Data.Entities
         public DateTime horariofim { get; set; }
         public DiasSemana dia_semana { get; set; }
 
+        [ForeignKey("id_unidade")]
         public ICollection<UnidadeSaude> UnidadeSaudes { get; set; }
 
+        //[ForeignKey("id_medico")]
+        //public ICollection<Medico> Medicos { get; set; }
+
+        [ForeignKey("id_especialidade")]
         public ICollection<Especialidade> Especialidades { get; set; }
     }
 }
