@@ -20,8 +20,7 @@ namespace Data
         public DbSet<Medico> Medico { get; set; }
         public DbSet<Especialidade> Especialidade { get; set; }
         public DbSet<UnidadeSaude> UnidadeSaude { get; set; }
-        public DbSet<EspecialidadeMedico> EspecialidadeMedico { get; set; }
-        public DbSet<UnidadeMedico> UnidadeMedico { get; set; }
+
         public DbSet<BuscaEspecialidade> BuscaEspecialidade { get; set; }
         public DbSet<Plantao> Plantaos { get; set; }
 

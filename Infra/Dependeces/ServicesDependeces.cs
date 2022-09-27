@@ -24,6 +24,7 @@ namespace Infra.Dependeces
         public static IServiceCollection RepositoriesDependeces(this IServiceCollection services)
         {
             services.AddScoped<IMedicoRepository, MedicoRepository>();
+            services.AddScoped<IEspecialidadeRepository, EspecialidadeRepository>();
 
             return services;
 

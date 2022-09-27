@@ -9,7 +9,6 @@ namespace Data.Entities
         public int id_especialidade { get; set; }
         public string descricao { get; set; }
 
-        [ForeignKey("id_especialidade")]
         public Especialidade Especialidade { get; set; }
     }
 }

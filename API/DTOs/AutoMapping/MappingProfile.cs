@@ -8,6 +8,7 @@ namespace API.DTOs.AutoMapping
         public MappingProfile()
         {
                 CreateMap<MedicoDTO,Medico>().ReverseMap();
+            CreateMap<EspecialidadeDTO,Especialidade>().ReverseMap();
         }
     }
 }
