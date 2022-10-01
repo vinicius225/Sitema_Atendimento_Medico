@@ -8,6 +8,7 @@ namespace Data.Repositories
     {
         public MedicoRepository(AppDbContext appDbContext) : base(appDbContext)
         {
+
         }
     }
 }

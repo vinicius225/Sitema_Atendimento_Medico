@@ -12,6 +12,6 @@ namespace Data.Entities
         public string numero { get; set; }
         public string telefone { get; set; }
 
-        public ICollection<Medico> Medicos { get; set; }    
+
     }
 }

@@ -17,7 +17,7 @@ namespace Infra.Dependeces
         {
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
 
-            services.AddDbContext<AppDbContext>(options => options.UseMySql("server=localhost;user=root;password=123456;database=upa", serverVersion));
+            services.AddDbContext<AppDbContext>(options => options.UseMySql("server=sambd.mysql.database.azure.com;user=tcc@sambd;password=Sam2022_8p;database=upa", serverVersion));
 
             return services;
         }
