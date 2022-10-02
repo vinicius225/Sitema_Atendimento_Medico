@@ -2,6 +2,10 @@
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
+using System.IdentityModel.Tokens.Jwt;
+using System.Security.Claims;
+using System.Text;
 
 namespace API.Controllers
 {
@@ -9,13 +13,16 @@ namespace API.Controllers
     [ApiController]
     public class AuthenticationController : ControllerBase
     {
-        public readonly UserManager<IdentityUser> _userManager;
-        public readonly SignInManager<IdentityUser> _signInManager;
+        private readonly UserManager<IdentityUser> _userManager;
+        private readonly SignInManager<IdentityUser> _signInManager;
+        private readonly IConfiguration _config;
 
-        public AuthenticationController(UserManager<IdentityUser> usermanager, SignInManager<IdentityUser> signInManager)
+        #region Actions
+        public AuthenticationController(UserManager<IdentityUser> usermanager, SignInManager<IdentityUser> signInManager, IConfiguration configuration)
         {
             _signInManager = signInManager;
             _userManager = usermanager;
+            _config = configuration;
         }
         [HttpGet]
         public ActionResult<string> Get()
@@ -45,7 +52,7 @@ namespace API.Controllers
             }
             await _signInManager.SignInAsync(userIdentity, false);
 
-            return Ok();
+            return Ok(GeraToken(user));
         }
         [HttpPost("login")]
         public async  Task<ActionResult> Login(UsuarioDto usuario)
@@ -56,16 +63,58 @@ namespace API.Controllers
             }
             var result = _signInManager.PasswordSignInAsync(usuario.Email, usuario.Password, false, false);
 
-            if (result.IsCompletedSuccessfully)
+            if (result.Id != null)
             {
-                return Ok();
+                return Ok(GeraToken(usuario));
             }else
             {
                 return BadRequest("Login Invalido!");
             }
         }
 
-  
+        #endregion
+
+        #region Methods
+        private UsuarioToken GeraToken(UsuarioDto usuarioDto)
+        {
+            var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.UniqueName, usuarioDto.Email),
+                new Claim("Trabalho","Topado"),
+                new Claim (JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString())
+            };
+
+            //gerar uma chave com base em um algiritimo simetrico
+            var key = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes(_config["Jwt:Key"])
+                );
+            //gerar assinatura digital do token usando o algoritimo Hmac e a chave privada
+            var credenciais = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var expiracao = _config["TokenConfiguration:ExpireHours"];
+            var expiration = DateTimeOffset.UtcNow.AddHours(double.Parse(expiracao));
+
+
+            //Classe Que representa a autenticação JWT
+            JwtSecurityToken token = new JwtSecurityToken(
+                issuer: _config["TokenConfiguration:Issuer"],
+                audience: _config["TokenConfiguration:Audiance"],
+                claims: claims,
+                expires: expiration.DateTime,
+                signingCredentials: credenciais
+
+                );
+
+            return new UsuarioToken()
+            {
+                Authenticated = true,
+                Token = new JwtSecurityTokenHandler().WriteToken(token),
+                Expiration = expiration.DateTime,
+                Message = "Token JWT ok"
+            };
+
+        }
+        #endregion
     }
 }
 

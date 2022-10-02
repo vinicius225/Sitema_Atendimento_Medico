@@ -8,6 +8,8 @@ using Microsoft.EntityFrameworkCore;
 using Data.Repositories.Interfaces;
 using Data.Repositories;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 
 namespace Infra.Dependeces
 {
@@ -33,6 +35,7 @@ namespace Infra.Dependeces
             return services;
 
         }
+
 
 
     }

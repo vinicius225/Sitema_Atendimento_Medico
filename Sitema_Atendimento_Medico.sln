@@ -18,6 +18,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API", "API\API.csproj", "{B
 		{DDB1E28D-0B74-469E-ACE7-3D0040FFBF05} = {DDB1E28D-0B74-469E-ACE7-3D0040FFBF05}
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{FF2A8AB1-AF1D-461A-B97B-2590B10E0358}"
+	ProjectSection(SolutionItems) = preProject
+		.gitattributes = .gitattributes
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
