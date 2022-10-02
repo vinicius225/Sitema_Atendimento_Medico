@@ -7,6 +7,7 @@ using Data;
 using Microsoft.EntityFrameworkCore;
 using Data.Repositories.Interfaces;
 using Data.Repositories;
+using Microsoft.AspNetCore.Identity;
 
 namespace Infra.Dependeces
 {
@@ -18,6 +19,9 @@ namespace Infra.Dependeces
             var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
 
             services.AddDbContext<AppDbContext>(options => options.UseMySql("server=localhost;user=tcc@sambd;password=root;database=upa", serverVersion));
+
+            services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+                .AddEntityFrameworkStores<AppDbContext>();
 
             return services;
         }
