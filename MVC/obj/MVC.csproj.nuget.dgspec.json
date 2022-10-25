@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj": {}
+    "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj": {}
   },
   "projects": {
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\Data.csproj": {
+    "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\obj\\",
+        "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\vinicius.andrade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinicius.andrade\\Source\\Repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vinicius.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -68,13 +68,13 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.7, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql.Design": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.1.2, )"
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -83,7 +83,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -92,21 +93,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj": {
+    "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj",
+        "projectUniqueName": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj",
         "projectName": "Infra",
-        "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj",
-        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\obj\\",
+        "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj",
+        "packagesPath": "C:\\Users\\vinicius.andrade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinicius.andrade\\Source\\Repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vinicius.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -120,8 +121,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Data\\Data.csproj"
+              "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj"
               }
             }
           }
@@ -150,13 +151,13 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.7, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql.Design": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.1.2, )"
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -165,7 +166,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -174,21 +176,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj": {
+    "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj",
+        "projectUniqueName": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj",
         "projectName": "MVC",
-        "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj",
-        "packagesPath": "C:\\Users\\vinic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\MVC\\obj\\",
+        "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\MVC\\MVC.csproj",
+        "packagesPath": "C:\\Users\\vinicius.andrade\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\MVC\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\vinic\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\vinicius.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -202,8 +204,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj": {
-                "projectPath": "C:\\Users\\vinic\\OneDrive\\Área de Trabalho\\Sistema de Atendimento Medico\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj"
+              "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj": {
+                "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj"
               }
             }
           }
@@ -221,6 +223,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -229,7 +239,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -241,7 +252,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
         }
       }
     }

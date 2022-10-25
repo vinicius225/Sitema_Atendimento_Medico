@@ -15,3 +15,20 @@ C:\Users\vinic\OneDrive\Área de Trabalho\Sistema de Atendimento Medico\Sitema_A
 C:\Users\vinic\OneDrive\Área de Trabalho\Sistema de Atendimento Medico\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.pdb
 C:\Users\vinic\OneDrive\Área de Trabalho\Sistema de Atendimento Medico\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.genruntimeconfig.cache
 C:\Users\vinic\OneDrive\Área de Trabalho\Sistema de Atendimento Medico\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\ref\Infra.dll
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Infra.deps.json
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Infra.runtimeconfig.json
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Infra.dll
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Infra.pdb
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Data.dll
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\bin\Release\net6.0\Data.pdb
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.csproj.AssemblyReference.cache
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.AssemblyInfoInputs.cache
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.AssemblyInfo.cs
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.csproj.CoreCompileInputs.cache
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.csproj.CopyComplete
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.dll
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\refint\Infra.dll
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.pdb
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\Infra.genruntimeconfig.cache
+C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\Infra\obj\Release\net6.0\ref\Infra.dll
