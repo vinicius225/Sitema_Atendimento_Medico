@@ -3,6 +3,6 @@
   <PropertyGroup>
     <Controller_SelectedScaffolderID>ApiControllerEmptyScaffolder</Controller_SelectedScaffolderID>
     <Controller_SelectedScaffolderCategoryPath>root/Common/Api</Controller_SelectedScaffolderCategoryPath>
-    <NameOfLastUsedPublishProfile>C:\Users\vinicius.andrade\Source\Repos\vinicius225\Sitema_Atendimento_Medico\API\Properties\PublishProfiles\SistemaMedicoAPI - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
+    <NameOfLastUsedPublishProfile>C:\Users\vinicius.andrade\source\repos\vinicius225\Sitema_Atendimento_Medico\API\Properties\PublishProfiles\SistemaMedicoAPI - Web Deploy.pubxml</NameOfLastUsedPublishProfile>
   </PropertyGroup>
 </Project>

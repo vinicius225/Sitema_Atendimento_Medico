@@ -104,7 +104,7 @@
         "projectName": "Infra",
         "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\Infra.csproj",
         "packagesPath": "C:\\Users\\vinicius.andrade\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\vinicius.andrade\\Source\\Repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\obj\\",
+        "outputPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Infra\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinicius.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
