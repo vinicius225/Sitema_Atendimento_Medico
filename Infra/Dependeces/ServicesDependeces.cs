@@ -25,6 +25,9 @@ namespace Infra.Dependeces
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
+
+
+
             return services;
         }
         public static IServiceCollection RepositoriesDependeces(this IServiceCollection services)
