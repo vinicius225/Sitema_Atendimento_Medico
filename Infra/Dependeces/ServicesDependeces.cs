@@ -18,12 +18,15 @@ namespace Infra.Dependeces
 
         public static IServiceCollection ConfigurationDatabaseProject(this IServiceCollection services)
         {
-            var serverVersion = new MySqlServerVersion(new Version(8, 0, 30));
+          
 
-            services.AddDbContext<AppDbContext>(options => options.UseMySql("server=localhost;user=root;password=123456;database=upa", serverVersion));
+            services.AddDbContext<AppDbContext>(options => options.UseNpgsql("Server=projtcc.postgres.database.azure.com;Database=upa;Port=5432;User Id=vinicius;Password=coxinha123@;"));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+
+
+
 
             return services;
         }

@@ -14,7 +14,6 @@ namespace API.Controllers
 
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class EspecialidadeController : ControllerBase
     {
         private readonly IEspecialidadeRepository _especialidadeRepository;

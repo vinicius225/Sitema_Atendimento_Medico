@@ -1,7 +1,7 @@
 ﻿using Data.Entities;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Pomelo.EntityFrameworkCore.MySql;
+
 using System;
 using System.Collections.Generic;
 using System.Linq;

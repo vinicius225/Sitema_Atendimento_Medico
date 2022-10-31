@@ -1,0 +1,44 @@
+﻿@{
+    Layout = "_Acesso";
+    ViewData["Title"] = "Login";
+}
+
+<div style="margin: auto"
+<div class="login-box">
+    <div class="login-logo">
+        <a href="/"><b>Sistema de </b>Atendimento</a>
+    </div>
+
+    <div class="card">
+        <div class="card-body login-card-body">
+            <p class="login-box-msg">Faça o login</p>
+            <form action="acesso/login" method="post">
+                <div class="input-group mb-3">
+                    <input type="email" class="form-control" placeholder="E-mail">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="input-group mb-3">
+                    <input type="password" class="form-control" placeholder="Senha">
+                    <div class="input-group-append">
+                        <div class="input-group-text">
+                            <span class="fas fa-lock"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <button type="submit" class="btn btn-primary btn-block">Acessar</button>
+                    </div>
+
+                </div>
+            </form>
+
+
+
+    </div>
+</div>
+</div>

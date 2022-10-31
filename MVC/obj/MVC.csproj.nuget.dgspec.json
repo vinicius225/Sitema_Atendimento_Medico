@@ -11,7 +11,11 @@
         "projectName": "Data",
         "projectPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\vinicius.andrade\\.nuget\\packages\\",
+<<<<<<< HEAD
         "outputPath": "C:\\Users\\vinicius.andrade\\source\\repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\obj\\",
+=======
+        "outputPath": "C:\\Users\\vinicius.andrade\\Source\\Repos\\vinicius225\\Sitema_Atendimento_Medico\\Data\\obj\\",
+>>>>>>> da482691bbe1439f84cce86895ba873f0ea5b112
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\vinicius.andrade\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -68,13 +72,13 @@
               "target": "Package",
               "version": "[6.0.9, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.7, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql.Design": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.1.2, )"
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -151,13 +155,13 @@
               "target": "Package",
               "version": "[6.0.0, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql": {
+            "Npgsql": {
               "target": "Package",
-              "version": "[6.0.2, )"
+              "version": "[6.0.7, )"
             },
-            "Pomelo.EntityFrameworkCore.MySql.Design": {
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[1.1.2, )"
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
@@ -223,6 +227,14 @@
             "AutoMapper": {
               "target": "Package",
               "version": "[11.0.1, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
+              "target": "Package",
+              "version": "[6.0.7, )"
             }
           },
           "imports": [
