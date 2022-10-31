@@ -20,7 +20,7 @@ namespace Infra.Dependeces
         {
           
 
-            services.AddDbContext<AppDbContext>(options => options.UseNpgsql("Server=projetotcc.postgres.database.azure.com;Database=upa;Port=5432;User Id=vinicius;Password=coxinha123@;"));
+            services.AddDbContext<AppDbContext>(options => options.UseNpgsql("Server=projtcc.postgres.database.azure.com;Database=upa;Port=5432;User Id=vinicius;Password=coxinha123@;"));
 
             services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
                 .AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
